@@ -9,7 +9,7 @@ const certificates = [
   { id: 5, title: "SQL", img: "/sql.jpg" },
   { id: 6, title: "Summer Workshop", img: "/summer-workshop.jpg" },
   { id: 7, title: "AI Workshop", img: "/AI-Workshop.jpg" },
-  { id: 8, title: "AI", img: "/ai.jpg" },
+ // { id: 8, title: "AI", img: "/ai.jpg" },
   { id: 9, title: "Internship Ambassador ", img: "/dev.jpg" },
   { id: 10, title: " E- Commerce ", img: "/e-commerce.jpg" },
   { id: 11, title: "Demo Full stack session", img: "/edu.jpg" },
