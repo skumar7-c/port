@@ -24,7 +24,7 @@ export default function About() {
       </motion.p>
 
       <motion.img
-        src="/sks.jpg"
+        src="/port/sks.jpg"
         alt="Profile"
         className="w-48 h-48 rounded-full mx-auto mt-8 shadow-lg border-4 border-cyan-400"
         initial={{ scale: 0 }}

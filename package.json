@@ -3,8 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-    "homepage": "https://skumar7.github.io/port",
-
+  "homepage": "https://skumar7-c.github.io/port",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

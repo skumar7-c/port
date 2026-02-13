@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import heroBg from "../assets/hero2-bg.jpg";
-import { ReactTyped } from "react-typed"; // ✅ named import
+import resumePDF from "../assets/resume.pdf"; // ✅ import resume file
+import { ReactTyped } from "react-typed";
 
 export default function Hero() {
   return (
@@ -20,7 +21,13 @@ export default function Hero() {
       >
         Hi, I'm{" "}
         <ReactTyped
-          strings={["S.Kumar","MERN Stack Developer", "Android Developer", "React developer","Satyendra Kumar"]}
+          strings={[
+            "S.Kumar",
+            "MERN Stack Developer",
+            "Android Developer",
+            "React developer",
+            "Satyendra Kumar",
+          ]}
           typeSpeed={70}
           backSpeed={50}
           loop
@@ -37,18 +44,34 @@ export default function Hero() {
         I focus on building clean, responsive and user-friendly websites.
       </motion.p>
 
-      {/* CTA Button */}
-      <motion.button
-        whileHover={{ scale: 1.1 }}
-        className="mt-6 px-6 py-3 rounded-full bg-cyan-400 text-black font-bold relative z-10 shadow-lg"
-        onClick={() =>
-          document
-            .getElementById("projects")
-            .scrollIntoView({ behavior: "smooth" })
-        }
-      >
-        Explore Projects
-      </motion.button>
+      {/* Buttons Section */}
+      <div className="flex gap-4 mt-6 relative z-10">
+        
+        {/* Explore Projects Button */}
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          className="px-6 py-3 rounded-full bg-cyan-400 text-black font-bold shadow-lg"
+          onClick={() =>
+            document
+              .getElementById("projects")
+              .scrollIntoView({ behavior: "smooth" })
+          }
+        >
+          Explore Projects
+        </motion.button>
+
+        {/* Resume Button */}
+        <motion.a
+          href={resumePDF}
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.1 }}
+          className="px-6 py-3 rounded-full border-2 border-cyan-400 text-cyan-400 font-bold shadow-lg hover:bg-cyan-400 hover:text-black transition duration-300"
+        >
+          View Resume
+        </motion.a>
+
+      </div>
     </section>
   );
 }
