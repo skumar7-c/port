@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -12,6 +12,16 @@ export default function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
+             {/* WhatsApp */}
+          <a
+            href="https://wa.me/917004345980"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-400 hover:text-green-500 transition-transform transform hover:scale-125"
+          >
+            <FaWhatsapp />
+          </a>
+          {/* GitHub */}
           <a
             href="https://github.com/skumar7-c"
             target="_blank"
@@ -20,6 +30,8 @@ export default function Footer() {
           >
             <FaGithub />
           </a>
+
+          {/* LinkedIn */}
           <a
             href="https://www.linkedin.com/in/satyendra-kumar-075848265"
             target="_blank"
@@ -28,6 +40,8 @@ export default function Footer() {
           >
             <FaLinkedin />
           </a>
+
+          {/* Instagram */}
           <a
             href="https://www.instagram.com/i_am_sk.s"
             target="_blank"

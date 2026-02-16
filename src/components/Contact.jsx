@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram,FaWhatsapp } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -32,7 +32,7 @@ export default function Contact() {
         </p>
         <p>
           Phone:{" "}
-          <a href="tel:+917004345980" className="text-cyan-400 hover:underline">
+          <a href="tel:+91 7004345980" className="text-cyan-400 hover:underline">
             +91 7004345980
           </a>
         </p>
@@ -45,6 +45,15 @@ export default function Contact() {
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.3 }}
       >
+           {/* WhatsApp */}
+          <a
+            href="https://wa.me/917004345980"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-400 hover:text-green-500 transition-transform transform hover:scale-125"
+          >
+            <FaWhatsapp />
+          </a>
         <a
           href="https://www.linkedin.com/in/satyendra-kumar-075848265"
           target="_blank"

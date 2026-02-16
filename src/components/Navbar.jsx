@@ -24,7 +24,7 @@ export default function Navbar() {
   return (
     <>
       {/* Navbar */}
-      <header className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-orange-500 via-white to-green-700 shadow-md">
+      <header className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-purple-500 shadow-md">
         <div className="flex items-center justify-between px-2 py-8 max-w-6xl mx-auto">
           {/* Logo / Name */}
           <motion.h2
